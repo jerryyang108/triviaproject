@@ -1,4 +1,4 @@
-LIngxiao Yang 101121720
+
 To install modules.
 npm install
 To run:
