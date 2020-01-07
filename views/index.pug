@@ -1,0 +1,11 @@
+html
+    head
+        title Questions
+ 
+    body
+        div#main
+            each question in questions
+                div
+                    a(target="_blank" href='/questions'+'/'+question._id, id = question._id) #{question.question}
+                
+                

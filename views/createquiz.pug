@@ -1,0 +1,30 @@
+html 
+    head 
+    h1 Quiz Generator
+   
+    body
+        script(src='../script.js')
+        p creater's name
+            input#creater_name(type="textbox")
+        p quiz tag  
+            input#quiz_tag(type="textbox")
+        p questions
+            div#savedQuestions
+        p Difficulty 
+            select#difficulty
+                each q in difficulty
+                    option #{q}
+        p Category
+            select#category
+                each q in category
+                    option #{q}
+        p
+            button#add(type="button", name="add", onclick='refresh()') Refresh/Search
+            br
+            br
+            button#save_quiz(type="button" name="save" onclick="save()") Save Quiz
+            button#add_quiz(type="button" name="add" onclick='add()') Add Question
+            button#delete(type="button" name="delete" onclick='remove()') Delete Question
+      
+        p Result
+            #result

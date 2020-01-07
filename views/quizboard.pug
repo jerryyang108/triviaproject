@@ -1,0 +1,11 @@
+html
+    head  
+    body
+        div#main
+        if quizzes.length == 0
+            h3 No result found!
+        else
+            each quiz in quizzes
+                div
+                    a(target="_blank" href='/quizzes?_id=' + quiz._id.toString())= "QUIZ " + quiz.quTag
+                    br
